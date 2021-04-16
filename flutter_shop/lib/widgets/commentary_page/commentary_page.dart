@@ -6,7 +6,8 @@ import 'package:flutter_shop/widgets/commentary_page/clickable_star.dart';
 import 'package:flutter_shop/widgets/commentary_page/commentary.dart';
 
 class CommentaryPageWidget extends StatefulWidget {
-  CommentaryPageWidget({Key key, this.commentaries, this.currentUser}) : super(key: key);
+  CommentaryPageWidget({Key key, this.commentaries, this.currentUser})
+      : super(key: key);
   int stars = 3;
   User currentUser;
   List<Commentary> commentaries;
@@ -18,7 +19,7 @@ class CommentaryPageWidgetState extends State<CommentaryPageWidget> {
   TextEditingController comment = new TextEditingController();
 
   void sendComment() {
-    if(comment.text.isEmpty) {
+    if (comment.text.isEmpty) {
       return;
     }
     setState(() {
