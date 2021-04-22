@@ -1,0 +1,36 @@
+{
+	"Type": [
+		{
+			"label": "Maison",
+			"type": "checkbox"
+		},
+		{
+			"label": "Loisirs",
+			"type": "checkbox"
+		},
+		{
+			"label": "Jardin",
+			"type": "checkbox"
+		}
+	],
+	"Price": [
+		{
+			"label": "",
+			"type": "slider"
+		}
+	],
+	"Brand": [		
+		{
+			"label": "Samsung",
+			"type": "checkbox"
+		},
+		{
+			"label": "Nokia",
+			"type": "checkbox"
+		},
+		{
+			"label": "Appel",
+			"type": "checkbox"
+		}
+	]
+}
