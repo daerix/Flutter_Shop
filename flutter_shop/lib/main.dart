@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_shop/models/commentary.dart';
 import 'package:flutter_shop/models/user.dart';
-import 'package:flutter_shop/widgets/commentary_page/commentary_page.dart';
+import 'package:flutter_shop/widgets/navigation_tab/navigation_tab.dart';
 
 List<Commentary> commentaries;
 User currentUser;
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CommentaryPageWidget(commentaries: commentaries, currentUser: currentUser),
+      home: NavigationTabWidget(),
     );
   }
 }
