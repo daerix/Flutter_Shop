@@ -9,7 +9,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 20;
+  productModel.price = 20;
   productModel.description="Produit 1";
   products.add(productModel);
   productModel = new ProductModel();
@@ -18,7 +18,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 20;
+  productModel.price = 20;
   productModel.description="Produit 2";
   products.add(productModel);
   productModel = new ProductModel();
@@ -27,7 +27,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 20;
+  productModel.price = 20;
   productModel.description = "Produit 3";
   products.add(productModel);
   productModel = new ProductModel();
@@ -36,7 +36,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 20;
+  productModel.price = 20;
   productModel.description="Produit 4";
   products.add(productModel);
   productModel = new ProductModel();
@@ -45,7 +45,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 20;
+  productModel.price = 20;
   productModel.description="Produit 5";
   products.add(productModel);
   productModel = new ProductModel();
@@ -54,7 +54,7 @@ List<ProductModel> getProducts(){
   productModel.noOfRating = 4;
   productModel.imgUrl = "";
   productModel.rating = 4;
-  productModel.priceInDollars = 57;
+  productModel.price = 57;
   productModel.description="Produit 6";
   products.add(productModel);
   productModel = new ProductModel();
