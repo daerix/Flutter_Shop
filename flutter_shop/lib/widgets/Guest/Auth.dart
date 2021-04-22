@@ -107,7 +107,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             : () {
                                 if (_formKey.currentState.validate()) {
                                   print(_email);
-                                  widget.onChangedStep(1);
+                                  widget.onChangedStep(2);
                                 }
                               },
                         child: Text(

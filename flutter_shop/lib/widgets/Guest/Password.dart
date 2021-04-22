@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shop/widgets/shop_page/shop_page.dart';
 
 class PassworScreen extends StatefulWidget {
   final Function(int) onChangedStep;
@@ -97,10 +98,13 @@ class _PassworScreenState extends State<PassworScreen> {
                         onPressed: _password.length < 6
                             ? null
                             : () {
-                          if (_formKey.currentState.validate()) {
-                            print(_password);
-                          }
-                        },
+                                if (_formKey.currentState.validate()) {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => ShopPageWidget())
+                                  );
+                                }
+                              },
                         child: Text(
                           'continue'.toUpperCase(),
                           style: TextStyle(
