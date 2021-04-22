@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shop/widgets/navigation_tab/navigation_tab.dart';
 import 'package:flutter_shop/widgets/shop_page/shop_page.dart';
 
 class PassworScreen extends StatefulWidget {
@@ -101,7 +102,7 @@ class _PassworScreenState extends State<PassworScreen> {
                                 if (_formKey.currentState.validate()) {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => ShopPageWidget())
+                                    MaterialPageRoute(builder: (context) => NavigationTabWidget())
                                   );
                                 }
                               },
