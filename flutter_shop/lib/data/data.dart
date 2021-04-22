@@ -2,7 +2,7 @@ import 'package:flutter_shop/models/categorie_model.dart';
 import 'package:flutter_shop/models/product_model.dart';
 
 List<ProductModel> getProducts(){
-  List<ProductModel> products = new List();
+  List<ProductModel> products = [];
   ProductModel productModel = new ProductModel();
   //1
   productModel.productName = "Special  gift card";
