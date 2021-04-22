@@ -24,9 +24,8 @@ class NavigationTabWidgetState extends State<NavigationTabWidget> {
           title: Text("Flutter Shop"),
           centerTitle: true,
           elevation: 0,
-          leading:
-              ElevatedButton(onPressed: () => goTo(0), child: Text("Shop")),
           actions: [
+            ElevatedButton(onPressed: () => goTo(0), child: Text("Shop")),
             ElevatedButton(onPressed: () => goTo(1), child: Text("Basket"))
           ],
         ),
