@@ -38,7 +38,7 @@ class ItemDisplayWidgetState extends State<ItemDisplayWidget> {
                           const Color(0xff557AC7).withOpacity(0.5)
                         ])),
                     child: Text(
-                      widget.product.priceInDollars.toString(),
+                      widget.product.price.toString(),
                       style: TextStyle(color: Colors.white),
                     ),
                   ),

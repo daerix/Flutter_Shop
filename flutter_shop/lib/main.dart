@@ -10,6 +10,9 @@ import 'package:flutter_shop/models/product_model.dart';
 import 'package:flutter_shop/resources/colors.dart';
 import 'package:flutter_shop/widgets/category.dart';
 import 'package:flutter_shop/widgets/item.dart';
+import 'package:flutter_shop/widgets/cart.dart';
+
+import 'models/product_model.dart';
 
 List<Commentary> commentaries;
 User currentUser;
@@ -64,6 +67,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List<ProductModel> products = [];
   List<CategorieModel> categories = [];
+  List<ProductModel> cart = [];
   @override
   void initState() {
     super.initState();
@@ -76,6 +80,46 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0, top: 8.0),
+            child: GestureDetector(
+              child: Stack(
+                alignment: Alignment.topCenter,
+                children: <Widget>[
+                  Icon(
+                    Icons.shopping_cart,
+                    size: 36.0,
+                  ),
+                  if (cart.length > 0)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 2.0),
+                      child: CircleAvatar(
+                        radius: 8.0,
+                        backgroundColor: Colors.red,
+                        foregroundColor: Colors.white,
+                        child: Text(
+                          cart.length.toString(),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12.0,
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+              onTap: () {
+                if (cart.isNotEmpty)
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => Cart(cart),
+                    ),
+                  );
+              },
+            ),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -114,11 +158,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   }),
             ),
 
-            /// Top categorie
+            ///Categorie
             Container(
               padding: EdgeInsets.symmetric(horizontal: 22),
               child: Text(
-                "Top categories",
+                "Categories",
                 style: TextStyle(color: Colors.black87, fontSize: 22),
               ),
             ),
