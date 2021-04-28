@@ -20,9 +20,6 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Cart'),
-      ),
       body: ListView.builder(
           itemCount: cart.length,
           itemBuilder: (context, index) {

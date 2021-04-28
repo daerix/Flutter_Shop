@@ -36,7 +36,7 @@ class CategoryDisplayWidgetState extends State<CategoryDisplayWidget> {
           SizedBox(
             height: 8,
           ),
-          Text(widget.category.categorieName),
+          Text(widget.category.categoryLabel),
         ],
       ),
     );
